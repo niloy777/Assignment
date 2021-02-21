@@ -1,26 +1,26 @@
 // Kilomete To meter 
-function kilometerToMeter (kilometer){
+function kilometerToMeter(kilometer) {
     var meter = 10000 * kilometer; //any given kilometer value will be multiplied by 1000 to convert it into Mete
     return meter;
 }
 var result = kilometerToMeter(20);
-console.log(result);
+// console.log(result);
 
 // Calculating total budget
-function budgetCalculator(watch, phone, laptop){
+function budgetCalculator(watch, phone, laptop) {
     // multiplying quantity and price
     var expense1 = watch * 50;
     var expense2 = phone * 100;
     var expense3 = laptop * 500;
     var totalExpense = expense1 + expense2 + expense3; // Now adding them together
-    return totalExpense; 
+    return totalExpense;
 }
 var total = budgetCalculator(3, 2, 4); // input the total number of watch, phone and laptop I want to buy
 console.log(total);
 
 // Hotel Cost Management
 
-function hotelCost(numberOfDays){
+function hotelCost(numberOfDays) {
     var cost = 0;
     if (numberOfDays <= 10) {
         var Cost = numberOfDays * 100;
@@ -47,20 +47,20 @@ console.log(totalCost);
 
 // Friend with the longest name
 
-function megaFriend(friendsName){
-    var tempLongestName = friendsName [0];
+function megaFriend(friendsName) {
+    var tempLongestName = friendsName[0];
 
-    for(var i=0; i<friendsName.length; i++){ 
-        if(typeof(friendsName[i])!=="string"){ 
+    for (var i = 0; i < friendsName.length; i++) {
+        if (typeof (friendsName[i]) !== "string") {
             return console.log("Enter a valid name as array element");
         }
-        else if(friendsName [i].length > tempLongestName.length){
-            tempLongestName = friendsName [i];
+        else if (friendsName[i].length > tempLongestName.length) {
+            tempLongestName = friendsName[i];
         }
     }
     return tempLongestName;
 }
 
-var longestName = megaFriend (["Monish", "Tuhin", "Israt", "Subhasis", "Rocky"]); 
+var longestName = megaFriend(["Monish", "Tuhin", "Israt", "Subhasis", "Rocky"]);
 console.log(longestName);
 
