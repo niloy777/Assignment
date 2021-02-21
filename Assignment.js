@@ -4,7 +4,7 @@ function kilometerToMeter(kilometer) {
     return meter;
 }
 var result = kilometerToMeter(20);
-// console.log(result);
+console.log(result);
 
 // Calculating total budget
 function budgetCalculator(watch, phone, laptop) {
